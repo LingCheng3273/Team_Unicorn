@@ -1,3 +1,5 @@
+//Team Unicorn-Ling, Jordan, Lisa, Adam
+
 /**
  * A program to carry on conversations with a human user.
  * This is the initial version that:  
@@ -31,7 +33,11 @@ public class Magpie2
     public String getResponse(String statement)
     {
 	String response = "";
-	if (statement.indexOf("no") >= 0)
+
+	if (statement.trim().equals("")){
+	    response = "Say something, please."
+	}
+	else if (statement.indexOf("no") >= 0)
 	    {response = "Why so negative?";
 	    }
 	else if (statement.indexOf("mother") >= 0
