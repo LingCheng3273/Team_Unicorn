@@ -21,7 +21,15 @@ public class StringExplorer
 		System.out.println ("After toLowerCase(), sample = " + sample);
 		
 		//  Try other methods here:
-
+		
+		//  Demonstrate the indexOf method with 2 parameters.
+		String sample2= "Hello World!";
+		int posO = sample2.indexOf("Hello");
+		int pos0= sample2.indexOf("Hello", 0);
+		int pos1= sample2.indexOf("Hello", 1);
+		System.out.println ("sample2.indexOf(\"Hello\") = " + posO);
+		System.out.println ("sample2.indexOf(\"Hello\", 0) = " + pos0);
+		System.out.println ("sample2.indexOf(\"Hello\", 1) = " + pos1);
 	}
 
 }
